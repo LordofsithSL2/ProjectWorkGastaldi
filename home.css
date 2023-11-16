@@ -1,0 +1,463 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: auto;
+    overflow: auto;
+}
+
+.testo-centrale {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: fading;
+    animation-duration: 3s;
+    text-align: left;
+}
+
+.paragrafo-centrale {
+    position: absolute;
+    width: 40%;
+    top: 26%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-size-adjust: auto;
+    opacity: 0.8;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box-link1 {
+    background-image: url(immagini/visidata.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position:absolute;
+    border-style: solid;
+    border-color: rgba(75, 69, 69, 0.561);
+    border-radius: 5px;
+    border-width: thin;
+    background-color: rgba(255, 255, 255, 0);
+    animation-name: none;
+    animation-duration: 2s;
+    top: 120%;
+    left: 65%;
+    width: 20vw;
+    height: 23vw;
+    padding: 2vw;
+}
+
+.box-link1:hover {
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.box-link2 {
+    background-image: url(immagini/rubinetto.jpg);
+    background-size: 430px 240px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position:absolute;
+    border-style: solid;
+    border-color: rgba(75, 69, 69, 0.561);
+    border-radius: 5px;
+    border-width: thin;
+    background-color: rgba(255, 255, 255, 0);
+    top: 120%;
+    left: 38%;
+    width: 20vw;
+    height: 23vw;
+    padding: 2vw;
+
+}
+
+.box-colore {
+    background-size: 430px 240px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position:absolute;
+    border-style: solid;
+    border-color: rgba(75, 69, 69, 0.561);
+    border-radius: 5px;
+    border-width: thin;
+    background-color: #37517e;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 46vw;
+    padding: 2vw;
+
+}
+
+.box-link2:hover{
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.box-link3 {
+    background-image: url(immagini/liguria.png);
+    background-size: 430px 240px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position:absolute;
+    border-style: solid;
+    border-color: rgba(75, 69, 69, 0.561);
+    border-radius: 5px;
+    border-width: thin;
+    background-color: rgba(255, 255, 255, 0);
+    top: 120%;
+    left: 11%;
+    width: 20vw;
+    height: 23vw;
+    padding: 2vw;
+
+}
+
+.box-link3:hover{
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.top-bar {
+    background-color: none;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+    transition: 1s;
+    opacity: 1;
+}
+
+.top-bar::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.bottom-bar {
+    background-color: #f3f5fa;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    height: 10%;
+}
+
+.licenza {
+    position: absolute;
+    bottom: -79%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.licenza:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.top-right-two {
+    position: fixed;
+    color:rgb(255, 255, 255);
+    animation-name: top-bar-two;
+    animation-duration: 2s;
+    text-size-adjust: auto;
+    text-align: right;
+    top: 0; 
+    width: auto; 
+    height: 5%; 
+    line-height: 5%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+.immagineBackground{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(immagini/camogli.png);
+    background-size:cover;
+    width: 100%;
+    height: 1020px;
+    right: 0%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+}
+
+.Liguria-Digitale {
+    position: absolute;
+    background-image: url(immagini/Liguria-Digitale.png);
+    background-repeat: no-repeat;
+    background-size:200px;
+    width: 210px;
+    height: 80px;
+    right: 0%;
+    top: 101.3%;
+    left: 20%;
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+.Liguria-Digitale:hover {
+    background-size: 210px;
+    transition: 1s;
+    filter: none;
+}
+
+.istat {
+    position: absolute;
+    background-image: url(immagini/Istat2.png);
+    background-repeat: no-repeat;
+    background-size:230px;
+    width: 240px;
+    height: 80px;
+    right: 0%;
+    top: 103%;
+    left: 40%;
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+.istat:hover {
+    background-size: 240px;
+    transition: 1s;
+    filter: none;
+}
+
+.gastaldi {
+    position: absolute;
+    background-image: url(immagini/Gastald332.png);
+    background-repeat: no-repeat;
+    background-size:90px;
+    border-radius: 10px;
+    width: 93px;
+    height: 90px;
+    right: 0%;
+    top: 101.2%;
+    left: 63%;
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+.gastaldi:hover {
+    background-size: 95px;
+    transition: 1s;
+    filter: none;
+}
+
+.qgis {
+    position: absolute;
+    background-image: url(immagini/qgislogo.png);
+    background-repeat: no-repeat;
+    background-size:150px;
+    border-radius: 10px;
+    width: 160px;
+    height: 90px;
+    right: 0%;
+    top: 101.8%;
+    left: 74%;
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+.qgis:hover {
+    background-size: 160px;
+    transition: 1s;
+    filter: none;
+}
+
+.descrizione {
+    position: absolute;
+    top: 102%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.immagine-gastaldi {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-color: none;
+    background-image: url(immagini/gastaldi.png);
+    background-size: 250px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    right: 1%;
+    top: 0.3%;
+    animation-name: top-bar;
+    animation-duration: 2s;
+}
+
+.numero {
+    color: black;
+    position: absolute;
+    right: 50%;
+    top: 50%
+}
+
+.top-bar.sticky {
+    background-color: #37517e;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    left: 70%;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    right: 0%;
+    position: relative; /* Aggiunto per posizionare correttamente il pseudo-elemento */
+}
+
+.navbar a:hover {
+    color:#568be8;
+    transition: 1s;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    position: fixed;
+    top: 0.20%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: none;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    top: 5%;
+    transition: 1s;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@keyframes top-bar {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+    
+}
+
+@keyframes top-bar-two {
+    from {
+        transform: translateX(-600%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes top-bar-linkers {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+    
+}
+
+@keyframes box-visidata {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes box-qgis {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+    
+}
+
+@keyframes fading {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+

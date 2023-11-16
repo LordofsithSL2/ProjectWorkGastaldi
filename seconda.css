@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: auto;
+    overflow: auto;
+}
+
+.testo-centrale {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: testo-centrale;
+    animation-duration: 2s;
+}
+
+.home {
+    position: fixed;
+    color:rgb(255, 255, 255);
+    top: -10px;
+    right: 2%;
+}
+
+.home:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.paragrafo-centrale {
+    position: absolute;
+    width: 100%;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: paragrafo-centrale;
+    animation-duration: 2s;
+}
+
+.top-bar {
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+}
+
+.sottotitolo-background {
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    height: 210px;
+}
+
+.sottotitolo {
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.immagine-visidata {
+    position: absolute;
+    animation-name: immagini;
+    animation-duration: 2s;
+    width: 640px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.immagine-qgis {
+    position: absolute;
+    animation-name: immagini;
+    animation-duration: 2s;
+    width: 1000px;
+    top: 130%;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+}
+
+.immagine-gqgis:hover {
+    background-color: grey;
+}
+
+
+
+.dati-genova {
+    background-color: rgba(117, 52, 52, 0.47);
+    position: absolute;
+    color: rgb(236, 236, 236);
+    background-size: 200px;
+    width: 90px;
+    top: 118%;
+    left: 50%;
+    padding: 0px;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: ridge;
+    opacity: 0;
+
+}
+
+.dati-genova:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.titolo-testo1 {
+    position: absolute;
+    font-size: 50px;
+    width: 20px;
+    top: 32%;
+    left: 70%;
+    animation-name: box-qgis;
+    animation-duration: 2s;
+}
+
+.paragrafo-testo1 {
+    position: absolute;
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    top: 45%;
+    left: 60%;
+    padding: 0px;
+    animation-name: box-qgis;
+    animation-duration: 2s;
+}
+
+.titolo-testo2 {
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    width: 20px;
+    top: 80%;
+    right: 51%;
+    animation-name: box-qgis;
+    animation-duration: 2s;
+}
+
+.paragrafo-testo2 {
+    position: absolute;
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    top: 93%;
+    right: 20%;
+    padding: 0px;
+    animation-name: box-qgis;
+    animation-duration: 2s;
+}
+
+
+.bottom-bar {
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    bottom: -60%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+}
+
+.licenza {
+    position: absolute;
+    bottom: -59%;
+    right: 0%;
+    width: 100%;
+    height: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.licenza:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.top-right-two {
+    position: fixed;
+    color:rgb(255, 255, 255);
+    top: -10px;
+    text-align: right;
+}
+
+.immagine-gastaldi {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-image: url(immagini/gastaldi.png);
+    background-size: 250px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    right: 7%;
+    top: 0.3%;
+    animation-name: top-bar;
+    animation-duration: 2s;
+}
+
+.blu-scuro {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+    top: 105%;
+    right: 87%;
+    animation-name: box-qgis;
+    animation-duration: 2s;
+}
+
+
+@keyframes top-bar {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+    
+}
+
+@keyframes top-bar-two {
+    from {
+        transform: translateX(-600%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes top-bar-linkers {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+    
+}
+
+@keyframes box-visidata {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes box-qgis {
+    from {
+        transform: translateX(2000%);
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateX(0%);
+        transform: translateY(50%);
+    }
+    
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+    
+}
+
+@keyframes immagini {
+    from {
+        transform: translatex(-600%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
